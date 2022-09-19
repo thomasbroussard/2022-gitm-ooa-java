@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/test-new-project/bank-account-system.iml" filepath="$PROJECT_DIR$/test-new-project/bank-account-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s2022-gitm-ooa-uml-java.iml" filepath="$PROJECT_DIR$/s2022-gitm-ooa-uml-java.iml" />
+    </modules>
+  </component>
+</project>
