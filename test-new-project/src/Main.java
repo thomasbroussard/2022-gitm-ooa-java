@@ -21,13 +21,14 @@ public class Main {
         thomas.setName(name);
 
 
+        float balance = scanner.nextFloat();
+        float interestRate = scanner.nextFloat();
 
 
+        SavingsAccount savingsAccount = new SavingsAccount(balance, interestRate);
 
-        SavingsAccount savingsAccount = new SavingsAccount(200.0f, 0.001f);
-
-        float balance = savingsAccount.getBalance();
-        float interestRate = savingsAccount.getInterestRate();
+        balance = savingsAccount.getBalance();
+        interestRate = savingsAccount.getInterestRate();
 
         float totalInterests = AccountComputationServices.computeInterests(balance, interestRate);
 
@@ -36,7 +37,7 @@ public class Main {
 
         String name_2 = "quentin";
         String address_2 = "créteil";
-
+        scanner.close();
 
     }
 
