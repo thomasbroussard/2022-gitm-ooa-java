@@ -7,4 +7,10 @@ public class AccountComputationServices {
         float totalInterests = balance * interestRate;
         return totalInterests;
     }
+
+    public static void serviceSample(){
+
+    }
+
+
 }
