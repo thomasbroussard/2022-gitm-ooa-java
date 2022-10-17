@@ -7,6 +7,13 @@ public class Triangle {
    private float height;
    private float base;
 
+    public Triangle(float sideB, float sideA, float height, float base) {
+        this.sideB = sideB;
+        this.sideA = sideA;
+        this.height = height;
+        this.base = base;
+    }
+
     public float getSideB() {
         return sideB;
     }
