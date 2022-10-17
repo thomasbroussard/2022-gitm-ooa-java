@@ -1,3 +1,5 @@
+package fr.epita.gitm;
+
 import fr.epita.gitm.datamodel.Customer;
 import fr.epita.gitm.datamodel.SavingsAccount;
 
