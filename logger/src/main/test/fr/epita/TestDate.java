@@ -6,11 +6,27 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 import java.util.Date;
+import java.util.Scanner;
 
 public class TestDate {
 
     public static void main(String[] args) {
-       // javaUtilDateTest();
+
+        System.out.println("please enter a date at format: yyyy/MM/dd");
+        Scanner scanner = new Scanner(System.in);
+
+        String dateAsString = scanner.nextLine();
+
+        //how to check?
+        try {
+            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+            TemporalAccessor parsedDateTime = dateFormatter.parse(dateAsString);
+            System.out.println(parsedDateTime);
+        }catch (DateTimeException e){
+            System.out.println("error in the format, please correct the following input :"+ dateAsString);
+        }
+
+        // javaUtilDateTest();
         //"date to String"
         LocalDateTime dateTime = LocalDateTime.now();
         System.out.println(dateTime);
