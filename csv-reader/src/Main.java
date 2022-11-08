@@ -14,6 +14,8 @@ public class Main {
 
         Scanner scanner = new Scanner(fis);
 
+        System.out.println("welcome to this application");
+
         List<Person> personList = new ArrayList<>();
         scanner.nextLine();
         while (scanner.hasNext()) {
