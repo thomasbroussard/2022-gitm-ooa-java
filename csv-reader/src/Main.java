@@ -21,6 +21,8 @@ public class Main {
             String[] lineParts = line.split(";");
             Person person = new Person();
             person.setAddress(lineParts[1]);
+            person.setPhone(lineParts[2]);
+            person.setName(lineParts[0]);
             personList.add(person);
         }
 

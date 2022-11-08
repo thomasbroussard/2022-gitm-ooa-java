@@ -3,6 +3,24 @@ package fr.epita.datamodel;
 public class Person {
 
     private String address;
+    private String phone;
+    private String name;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getAddress() {
         return address;
@@ -16,6 +34,8 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
