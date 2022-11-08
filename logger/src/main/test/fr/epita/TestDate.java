@@ -1,5 +1,8 @@
 package fr.epita;
 
+import fr.epita.logging.Logger;
+
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.DateTimeException;
 import java.time.LocalDateTime;
@@ -9,6 +12,8 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class TestDate {
+
+    private static final Logger LOGGER = new Logger(new File("test.log"));
 
     public static void main(String[] args) {
 
@@ -24,6 +29,7 @@ public class TestDate {
             System.out.println(parsedDateTime);
         }catch (DateTimeException e){
             System.out.println("error in the format, please correct the following input :"+ dateAsString);
+            LOGGER.log(Logger.Levels.ERROR, "error");
         }
 
         // javaUtilDateTest();
