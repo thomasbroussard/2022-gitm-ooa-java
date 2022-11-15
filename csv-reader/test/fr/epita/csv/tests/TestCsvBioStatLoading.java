@@ -31,6 +31,8 @@ public class TestCsvBioStatLoading {
                 .mapToInt(BioStatData::getWeightSeptember)
                 .average()
                 .getAsDouble();
+        //majority gender?
+        //entry with max bmi in april
         System.out.println(average2);
 
     }
