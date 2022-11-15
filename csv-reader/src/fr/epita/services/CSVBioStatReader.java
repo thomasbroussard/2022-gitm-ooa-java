@@ -36,10 +36,12 @@ public class CSVBioStatReader {
     }
     private BioStatData readBioStatRecord(String record){
 
-        String[] lineParts = record.split(";");/*  */
+        String[] lineParts = record.split(",");/*  */
         BioStatData bioStatData = new BioStatData();
         bioStatData.setSex(lineParts[0]);
-        bioStatData.setWeightSeptember(lineParts[1]);
+        bioStatData.setWeightSeptember(Integer.valueOf(lineParts[1].trim()));
+
+        bioStatData.setBmiSeptember(Double.valueOf(lineParts[3].trim()));
         return bioStatData ;
     }
 }

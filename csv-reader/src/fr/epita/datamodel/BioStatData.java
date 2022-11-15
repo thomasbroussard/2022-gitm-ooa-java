@@ -3,7 +3,9 @@ package fr.epita.datamodel;
 public class BioStatData {
 
     private String sex;
-    private String weightSeptember;
+    private Integer weightSeptember;
+
+    private Double bmiSeptember;
 
     public String getSex() {
         return sex;
@@ -13,13 +15,28 @@ public class BioStatData {
         this.sex = sex;
     }
 
-    public String getWeightSeptember() {
+    public Integer getWeightSeptember() {
         return weightSeptember;
     }
 
-    public void setWeightSeptember(String weightSeptember) {
+    public void setWeightSeptember(Integer weightSeptember) {
         this.weightSeptember = weightSeptember;
     }
 
+    public Double getBmiSeptember() {
+        return bmiSeptember;
+    }
 
+    public void setBmiSeptember(Double bmiSeptember) {
+        this.bmiSeptember = bmiSeptember;
+    }
+
+    @Override
+    public String toString() {
+        return "BioStatData{" +
+                "sex='" + sex + '\'' +
+                ", weightSeptember=" + weightSeptember +
+                ", bmiSeptember=" + bmiSeptember +
+                '}';
+    }
 }
