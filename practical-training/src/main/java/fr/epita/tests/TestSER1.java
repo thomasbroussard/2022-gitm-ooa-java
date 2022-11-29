@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TestSER1 {
 
-    public void test() throws IOException {
+    public static void test() throws IOException {
         List<String> lines = Files.readAllLines(new File("data.csv").toPath());
         System.out.println(lines.get(2));
     }
