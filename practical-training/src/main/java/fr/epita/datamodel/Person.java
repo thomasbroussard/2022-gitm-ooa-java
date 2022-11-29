@@ -60,8 +60,8 @@ public class Person {
     @Override
     public String toString() {
         return "Person[" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
+                "name=\"" + name + "\"" +
+                ", weight=\"" + weight+"\""+
                 ']';
     }
 }
